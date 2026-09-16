@@ -18,9 +18,9 @@
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta name="theme-color" content="#f4f1e8">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="32x32">
+<link rel="icon" href="/icon-512.png?v=3" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -161,10 +161,16 @@ h3 .reg{font-weight:400;color:var(--soft)}
 .blist{list-style:none;margin:0;padding:0}
 .blist li{margin:0 0 .46rem;font-size:13px;color:var(--soft);line-height:1.6}
 .blist strong{color:var(--ink);font-weight:600}
-.gap{margin:0 0 1.9rem;padding:.6rem .9rem;background:var(--card);
-  border:1px solid var(--hair);display:flex;justify-content:space-between;gap:1rem;
-  font-size:11px;color:var(--muted);letter-spacing:.02em}
-.gap .when{white-space:nowrap}
+/* ⚑ THE GAP LINE IS A NOTE, NOT A CARD — Julio's ruling, 2026-09-16.
+ * It was boxed, which gave a line explaining an absence more visual weight than the
+ * employer notes explaining the roles around it. It now carries the same size, colour
+ * and weight as the employer note, so it reads as an aside in the same voice. */
+.gap{margin:0 0 1.9rem;padding:0;background:none;border:0;
+  display:flex;justify-content:space-between;gap:1.2rem;align-items:baseline;
+  font-size:12px;color:var(--muted)}
+.gap strong{font-weight:600;color:var(--muted)}
+.gap .when{flex:0 0 auto;white-space:nowrap;font-size:11px;color:var(--muted);
+  letter-spacing:.04em}
 
 .edu-item{margin:0 0 1.1rem}
 .edu-item .top{display:flex;align-items:baseline;justify-content:space-between;gap:1.2rem}
