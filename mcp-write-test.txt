@@ -1,1 +1,0 @@
-Write test from the iBerotech Context MCP, v2.4.0. Deleted in the next commit.
