@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mrjuliogomez.com/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://mrjuliogomez.com/es/</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
