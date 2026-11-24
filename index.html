@@ -141,11 +141,16 @@ aside h2{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:va
 .rows .lvl{color:var(--muted);font-size:11px;white-space:nowrap}
 
 /* the closing band, three labelled groups derived from the pool's Type column */
-.band{margin:0 0 1.4rem}
-.band h3{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+.band,.tgroup{margin:0 0 1.4rem}
+.band h3,.tgroup h3{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
   font-weight:500;margin:0 0 .45rem}
 .plain{list-style:none;margin:0;padding:0}
 .plain li{font-size:12.5px;color:var(--soft);padding:.16rem 0}
+/* bs-0.6.0 — the Technology block. Spaced tokens, no separators, so no line ever ends
+ * on a hanging dot; each name is kept whole. */
+.tools{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.16rem .9rem}
+.tools li{font-size:12.5px;color:var(--soft);white-space:nowrap}
+.tnote{margin:0;font-size:12px;color:var(--muted)}
 
 main h2{font-size:23px;font-weight:400;letter-spacing:-.012em;color:var(--ink)}
 main section + section{margin-top:2.6rem}
@@ -435,6 +440,62 @@ h3 .reg{font-weight:400;color:var(--soft)}
             <li>Bilingual operator, Iberia and Nordics</li>
           </ul>
         </div>
+      </section>
+
+      <section>
+        <h2>Technology</h2>
+        <div class="tgroup">
+          <h3>Core banking</h3>
+          <ul class="tools">
+            <li>Mambu</li>
+          </ul>
+        </div>
+        <div class="tgroup">
+          <h3>Data &amp; operations</h3>
+          <ul class="tools">
+            <li>Airtable</li>
+            <li>Asana</li>
+            <li>Tableau</li>
+            <li>Supabase</li>
+            <li>Google Workspace</li>
+          </ul>
+        </div>
+        <div class="tgroup">
+          <h3>Sales &amp; research</h3>
+          <ul class="tools">
+            <li>Apollo.io</li>
+            <li>LinkedIn Sales Navigator</li>
+            <li>Crunchbase</li>
+            <li>Beauhurst</li>
+            <li>Companies House</li>
+            <li>LibreBOR</li>
+          </ul>
+        </div>
+        <div class="tgroup">
+          <h3>AI &amp; automation</h3>
+          <ul class="tools">
+            <li>Claude</li>
+            <li>OpenAI</li>
+            <li>Gemini</li>
+            <li>Vertex AI</li>
+            <li>Model Context Protocol</li>
+            <li>n8n</li>
+            <li>Cursor</li>
+            <li>Apify</li>
+          </ul>
+        </div>
+        <div class="tgroup">
+          <h3>Cloud &amp; code</h3>
+          <ul class="tools">
+            <li>Google Cloud</li>
+            <li>Railway</li>
+            <li>GitHub Actions</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <p class="tnote">Full roster on <a href="https://github.com/mrjuliogomez">GitHub</a></p>
       </section>
     </aside>
   </div>
